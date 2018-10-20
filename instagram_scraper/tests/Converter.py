@@ -2,6 +2,7 @@ import time
 import datetime
 import os
 import json
+
 #run setup first and when entering location (add the instagram location id)
 
 def testquery():
@@ -10,7 +11,9 @@ def testquery():
 
     unix = time.mktime(datetime.datetime.strptime(date, "%d/%m/%Y").timetuple())
 
-    os.system('instagram-scraper ' + location + ' --location -m 60 --media-metadata -u urmaskkk -p OssaPoiss1')
+    locationid = str(os.system('instagram-scraper ' + location + ' --search-location -u urmaskkk -p OssaPoiss1'))
+
+    os.system('instagram-scraper ' + locationid + ' --location -m 60 --media-metadata -u urmaskkk -p OssaPoiss1')
 
     input_dict = json.loads("C:/Users/Laptop/Desktop/funtimes/folder.json")
 
