@@ -13,7 +13,7 @@ def testquery():
 
 def locationgetter():
 
-    location = input('Asukoht: ')
+    location = input('Location: ')
 
     os.system('instagram-scraper ' + location + ' --search-location -u urmaskkk -p OssaPoiss1')
 
