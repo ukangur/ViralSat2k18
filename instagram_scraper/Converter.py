@@ -11,7 +11,7 @@ def testquery():
 
     postnum = input("How many posts do you want to download?: ")
 
-    os.system('instagram-scraper ' + locationgetter() + ' --location -m' + postnum + ' -u urmaskkk -p OssaPoiss1')
+    os.system('instagram-scraper ' + locationgetter() + ' --location -m' + postnum + ' --media-metadata -u urmaskkk -p OssaPoiss1')
 
 def locationgetter():
 
