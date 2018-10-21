@@ -9,7 +9,9 @@ import sys
 
 def testquery():
 
-    os.system('instagram-scraper ' + locationgetter() + ' --location -m 10 -u urmaskkk -p OssaPoiss1')
+    postnum = input("How many posts do you want to download?: ")
+
+    os.system('instagram-scraper ' + locationgetter() + ' --location -m' + postnum + ' -u urmaskkk -p OssaPoiss1')
 
 def locationgetter():
 
@@ -17,7 +19,7 @@ def locationgetter():
 
     os.system('instagram-scraper ' + location + ' --search-location -u urmaskkk -p OssaPoiss1')
 
-    return input('Location code (enter the one from above): ')
+    return input('Location code (enter one from above): ')
 
 
 testquery()
