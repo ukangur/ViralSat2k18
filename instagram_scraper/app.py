@@ -1020,17 +1020,11 @@ class InstagramScraper(object):
             raise ValueError("No locations found for query '{0}'".format(query))
 
         sorted_places = sorted(result['places'], key=itemgetter('position'))
-
-        for item in sorted_places[0:5]:
-            place = item['place']
-            print('location-id: {0}, title: {1}, subtitle: {2}, city: {3}, lat: {4}, lng: {5}'.format(
-                place['location']['pk'],
-                place['title'],
-                place['subtitle'],
-                place['location']['city'],
-                place['location']['lat'],
-                place['location']['lng']
-            ))
+        place = sorted_places[0]['place']
+        a = ('{0}'.format(
+            place['location']['pk'],
+        ))
+        print(a)
 
     @staticmethod
     def save_json(data, dst='./'):
