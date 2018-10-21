@@ -29,7 +29,8 @@ Usage
 -----
 
 After you have installed instagram scraper, you can get to scraping. I made a simple command line converter,
-which is located in the NASA
+which is located in the NASA SPACE APP folder backend. We also have a WIP: frontend to
+demo our app at the pitch
 
 License
 -------
